@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Хелоу пипл!</h1>
-    <p>Lorem ipsum opusum herphojrgikwsigwng;gnwwnsktiwnigwtionvikotw vikotiewkwodnlnkswfnioewsdklnefioqipgndeqhipbsjjdfbcejsrzdyjeazyktrajezdytjhgcsjKUAPAkdjhdxnzbdgh</p>
+    {% if is_draw_note %}
+    <h1>{{my_note}}</h6>
+    {% endif %}
+    {% for i in values %}
+    <li>{{i}}</li>
+    {% endfor %}
+    <p>руханчик</p>
 </body>
 </html>
